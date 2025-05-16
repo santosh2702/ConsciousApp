@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(180deg, #2A2A72, #D1C4E9);
+  color: #2A2A72;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFB74D;
+  text-shadow: 0 0 10px rgba(255, 183, 77, 0.5);
+}
+
+.awareness-orb {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #FFB74D, #D1C4E9);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.2); }
+  100% { transform: translateX(-50%) scale(1); }
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #FFB74D;
+  animation: avatar-pulse 4s ease-in-out infinite;
+}
+
+@keyframes avatar-pulse {
+  0% { box-shadow: 0 0 10px rgba(255, 183, 77, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(255, 183, 77, 0.8); }
+  100% { box-shadow: 0 0 10px rgba(255, 183, 77, 0.5); }
+}
+
+.progress-bar {
+  background: #D1C4E9;
+  height: 25px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-bar div {
+  background: linear-gradient(90deg, #FFB74D, #2A2A72);
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2A2A72;
+  font-weight: 600;
+}
+
+.conscious-mode, .group-session {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.conscious-mode button, .group-session button {
+  background: #FFB74D;
+  color: #2A2A72;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.conscious-mode button:hover, .group-session button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 183, 77, 0.7);
+}
+
+.conscious-mode input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #D1C4E9;
+  margin-right: 10px;
+}
