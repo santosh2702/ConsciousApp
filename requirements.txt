@@ -5,4 +5,4 @@ pip install numpy==1.26.4
 pip install python-socketio==5.11.4
 pip install torch==2.4.1
 pip install transformers==4.44.2
-pip install spacy==3.7.2
+pip install spacy==3.7.2 
